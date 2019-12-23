@@ -78,6 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // 텍스트 필드의 내용이 삭제될 때 호출
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        
         print("텍스트 필드 내용 삭제")
         
         return true // false를 리턴하면 삭제되지 않는다.
@@ -88,7 +89,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         print("내용이 \(string)으로 변경된다.")
         
-        return true // false를 리턴하면 변경되지 않는다.
+        if Int(string) == nil {     // 입력된 값이 숫자가 아니라면 true
+            if (textField.text?.count)! + string.count > 10 {
+                return false
+            } else {
+                return true
+            }
+        } else {                    // 입력된 값이 숫자라면 false
+            
+            return false
+        }
+        
+        
+        // return true // false를 리턴하면 변경되지 않는다.
     }
     
     // 텍스트 필드의 리턴키가 눌러졌을 때 호출
