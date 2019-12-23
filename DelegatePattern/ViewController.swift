@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var mainTextField: UITextField!
@@ -43,7 +43,39 @@ class ViewController: UIViewController {
         // 테두리 두께 설정
         self.mainTextField.layer.borderWidth = 2.0
         
+        // 텍스트 필드를 최초 응답자로 설정
+        self.mainTextField.becomeFirstResponder()
+        
+        self.mainTextField.delegate = self
+        
     }
+    
+    @IBAction func confirm(_ sender: Any) {
+        
+        // 텍스트 필드를 최초 응답자 객체에서 해제
+        self.mainTextField.resignFirstResponder()
+    }
+    
+    
+    @IBAction func input(_ sender: Any) {
+        
+        // 텍스트 필드를 최초 응답자 객체로 지정
+        self.mainTextField.becomeFirstResponder()
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        
+        
+        
+        
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        
+    }
+    
+    
 
 
 }
