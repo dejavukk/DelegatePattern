@@ -63,16 +63,54 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.mainTextField.becomeFirstResponder()
     }
     
-    
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+    // 텍스트필드의 편집을 시작할 때 호출
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        
-        
-        
+        print("텍스트 필드의 편집이 시작된다.")
+        return true
     }
     
-    func textFieldDidChangeSelection(_ textField: UITextField) {
+    // 텍스트 필드의 편집이 시작된 후 호출
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         
+        print("텍스트 편집 시작")
+    }
+    
+    // 텍스트 필드의 내용이 삭제될 때 호출
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        print("텍스트 필드 내용 삭제")
+        
+        return true // false를 리턴하면 삭제되지 않는다.
+    }
+    
+    // 텍스트 필드의 내용이 변경될 때 호출
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        print("내용이 \(string)으로 변경된다.")
+        
+        return true // false를 리턴하면 변경되지 않는다.
+    }
+    
+    // 텍스트 필드의 리턴키가 눌러졌을 때 호출
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        print("리턴키가 눌러졌다.")
+        
+        return true
+    }
+    
+    // 텍스트 필드 편집이 종료될 때 호출
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        
+        print("편집 종료")
+        
+        return true // false를 리턴하면 편집이 종료되지 않는다.
+    }
+    
+    // 텍스트 필드의 편집이 종료되었을 때 호출
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        print("내용의 편집이 종료")
     }
     
     
