@@ -90,6 +90,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         print("내용이 \(string)으로 변경된다.")
         
         if Int(string) == nil {     // 입력된 값이 숫자가 아니라면 true
+            // 현재 텍스트 필드에 입력된 길이와 더해질 문자열 길이의 합이 10을 넘는다면 반영하지 않는다.
             if (textField.text?.count)! + string.count > 10 {
                 return false
             } else {
@@ -125,6 +126,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         print("내용의 편집이 종료")
     }
+    
+    
     
     
 

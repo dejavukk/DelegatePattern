@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0440D53223B39797002FA128 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440D53123B39797002FA128 /* SecondViewController.swift */; };
 		04B0197B23AFB3FE000ED1B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0197A23AFB3FE000ED1B4 /* AppDelegate.swift */; };
 		04B0197D23AFB3FE000ED1B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0197C23AFB3FE000ED1B4 /* SceneDelegate.swift */; };
 		04B0197F23AFB3FE000ED1B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0197E23AFB3FE000ED1B4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0440D53123B39797002FA128 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		04B0197723AFB3FE000ED1B4 /* DelegatePattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegatePattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B0197A23AFB3FE000ED1B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B0197C23AFB3FE000ED1B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				04B0197A23AFB3FE000ED1B4 /* AppDelegate.swift */,
 				04B0197C23AFB3FE000ED1B4 /* SceneDelegate.swift */,
 				04B0197E23AFB3FE000ED1B4 /* ViewController.swift */,
+				0440D53123B39797002FA128 /* SecondViewController.swift */,
 				04B0198023AFB3FE000ED1B4 /* Main.storyboard */,
 				04B0198623AFB3FF000ED1B4 /* Assets.xcassets */,
 				04B0198823AFB3FF000ED1B4 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				04B0197F23AFB3FE000ED1B4 /* ViewController.swift in Sources */,
 				04B0198523AFB3FE000ED1B4 /* DelegatePattern.xcdatamodeld in Sources */,
 				04B0197B23AFB3FE000ED1B4 /* AppDelegate.swift in Sources */,
+				0440D53223B39797002FA128 /* SecondViewController.swift in Sources */,
 				04B0197D23AFB3FE000ED1B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
