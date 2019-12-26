@@ -58,7 +58,13 @@ extension SecondViewController: UIImagePickerControllerDelegate, UINavigationCon
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        
+        // 이미지 피커 컨트롤러 창 닫기
+        picker.dismiss(animated: false) { () in
+            
+            // 이미지를 이미지 뷰에 표시
+            let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+            self.imgView.image = img
+        }
         
     }
     
